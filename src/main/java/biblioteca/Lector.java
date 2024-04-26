@@ -1,20 +1,10 @@
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+package biblioteca;
 
-import org.hibernate.annotations.DynamicUpdate;
-import org.hibernate.annotations.Table;
 
-@DynamicUpdate
-@Table(appliesTo = "lector")
 public class Lector {
-	@Id @GeneratedValue
-	private int id;
-	@Column
+	private Integer id;
 	private String nombre;
-	@Column
 	private String apellido;
-	@Column
 	private String email;
 	
 	public Lector() {

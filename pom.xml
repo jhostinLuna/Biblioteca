@@ -3,6 +3,7 @@
   <groupId>Ilerna_Jhostin_Luna</groupId>
   <artifactId>Biblioteca</artifactId>
   <version>1.0</version>
+  <name>Hibernate</name>
   <dependencies>
 	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 	<dependency>
