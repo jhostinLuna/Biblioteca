@@ -24,11 +24,11 @@ public class HibernateDB {
 				
 				//Crea SessionFactory usando propiedades de configuracion y mapeo
 				sessionFactory = cfg.buildSessionFactory(new StandardServiceRegistryBuilder().configure().build());
+				return sessionFactory;
 			} catch (Exception e) {
 				e.printStackTrace();
 				System.err.println("Error al cargar configuracion");
-			}
-			return sessionFactory;
+			}			
 		}
 		return sessionFactory;
 	}

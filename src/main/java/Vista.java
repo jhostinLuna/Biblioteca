@@ -58,7 +58,7 @@ public class Vista {
 			System.out.println("Escribe el autor del Libro: ");
 			newLibro.setAutor(scanner.nextLine());
 			System.out.println("Año de publicación del Libro: ");
-			newLibro.setPublicacion(scanner.nextInt());
+			newLibro.setAnioPublicacion(scanner.nextInt());
 			newLibro.setDisponible(true);
 			database.saveLibro(newLibro);
 		}

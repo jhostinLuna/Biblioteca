@@ -17,14 +17,15 @@ public class Libro{
 		this.anioPublicacion = anioPublicacion;
 		this.disponible = disponible;
 	}
-	public int getId() {
+	public Integer getId() {
 		return id;
-	}
-	public String getTitulo() {
-		return titulo;
 	}
 	public void setId(Integer id) {
 		this.id = id;
+	}
+	
+	public String getTitulo() {
+		return titulo;
 	}
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
@@ -35,11 +36,11 @@ public class Libro{
 	public void setAutor(String autor) {
 		this.autor = autor;
 	}
-	public Integer getPublicacion() {
+	public Integer getAnioPublicacion() {
 		return anioPublicacion;
 	}
-	public void setPublicacion(Integer publicacion) {
-		this.anioPublicacion = publicacion;
+	public void setAnioPublicacion(Integer anioPublicacion) {
+		this.anioPublicacion = anioPublicacion;
 	}
 	public boolean isDisponible() {
 		return disponible;
@@ -47,7 +48,6 @@ public class Libro{
 	public void setDisponible(boolean disponible) {
 		this.disponible = disponible;
 	}
-	
 	@Override
 	public String toString() {
 		return "Libro [id=" + id + ", titulo=" + titulo + ", autor=" + autor + ", anioPublicacion=" + anioPublicacion
